@@ -11,8 +11,8 @@ jobs:
     name: Render .dot files as .svg
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Graphviz
-        uses: ts-graphviz/setup-graphviz@v1
+#       - name: Setup Graphviz
+#         uses: ts-graphviz/setup-graphviz@v1
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
@@ -21,11 +21,10 @@ jobs:
         id: list-files
         run: echo "DOT_FILES=$(find . -name '*.dot' -print)" >> "$GITHUB_OUTPUT"
       - name: Debug
-        run: echo "The selected color is ${{ steps.list-files.outputs.DOT_FILES }}"
+        run: echo "${{ steps.list-files.outputs.DOT_FILES }}"
 #       - name: Convert .dot files to .svg
-#       - name: Upload .svg as artifacts
-#         uses: actions/upload-artifact@v3
-#         with:
-#           name: 
-#           path: my_file.txt
-#           retention-days: 1
+      - name: Upload .svg as artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          path: "**.svg"
+          retention-days: 1
