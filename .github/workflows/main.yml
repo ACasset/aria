@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**.dot"
+
+jobs:
+  dot:
+    name: Compile .dot
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compile .dot files
+        uses: alexrothenberg/digraph-to-svg-action@0.1.0
+        with:
+          # GitHub Token
+          githubToken: ${{ secrets.GITHUBTOKEN }}
