@@ -19,16 +19,9 @@ jobs:
           ref: ${{ github.head_ref }}
       - name: List .dot files
         id: list-files
-        run: echo "::set-output name=FILELIST::$(find . -name '*.dot' -print)"
+        run: echo "DOT_FILES=$(find . -name '*.dot' -print)" >> "$GITHUB_OUTPUT"
       - name: Debug
-        run: |
-          IFS="," read -a dot_dot_files <<< ${{ steps.list-files.outputs.FILELIST }}
-          for i in "${dot_dot_files[@]}"; do
-            file_path=$(dirname "${i}")
-            file_name=$(basename "${i}")
-            cd file_path
-            cat file_name
-          done
+        run: echo "The selected color is ${{ steps.list-files.outputs.DOT_FILES }}"
 #       - name: Convert .dot files to .svg
 #       - name: Upload .svg as artifacts
 #         uses: actions/upload-artifact@v3
