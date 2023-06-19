@@ -32,7 +32,7 @@ jobs:
       - name: Convert .dot files to .svg
         run: |
           for dot_file in $(find . -name '*.dot' -print); do
-            echo "Converting "$dot_file" to "${dot_file::-3}.svg"
+            echo "Converting '$dot_file' to '${dot_file::-3}.svg'"
             dot -Tsvg $dot_file -o ${dot_file::-3}.svg
           done
       - name: Upload .svg as artifacts
