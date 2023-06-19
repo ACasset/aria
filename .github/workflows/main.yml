@@ -19,4 +19,4 @@ jobs:
         uses: alexrothenberg/digraph-to-svg-action@0.1.0
         with:
           # GitHub Token
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          githubToken: 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
