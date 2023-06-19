@@ -1,4 +1,4 @@
-name: Graphviz
+name: Build
 
 on:
   workflow_dispatch:
@@ -10,21 +10,21 @@ on:
 
 jobs:
   dot:
-    name: Render .dot files as .svg
+    name: Convert .dot files to .svg
     runs-on: ubuntu-latest
     steps:
       - name: Install Graphviz
         run: sudo apt install -y graphviz
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Convert .dot files to .svg
+      - name: Convert files
         run: |
           for input_file in $(find . -name '*.dot' -print); do
             output_file=${input_file::-3}svg
             echo "Converting '$input_file' to '$output_file'"
             dot -Tsvg $input_file -o $output_file
           done
-      - name: Upload .svg as artifacts
+      - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
           path: "./**/*.svg"
