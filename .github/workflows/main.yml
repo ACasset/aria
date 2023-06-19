@@ -19,7 +19,14 @@ jobs:
           ref: ${{ github.head_ref }}
       - name: List .dot files
         id: list-files
-        run: echo "DOT_FILES=$(find . -name '*.dot' -print)" >> "$GITHUB_OUTPUT"
+        run: |
+          dot_files=[
+          for dot_file in $(find . -name '*.dot' -print); do
+           dot_files=$dot_files$dot_file,
+          done
+          dot_files=${dot_files::-1}]
+          echo $dot_files
+          echo "DOT_FILES=$dot_files" >> "$GITHUB_OUTPUT"
       - name: Debug
         run: echo "${{ steps.list-files.outputs.DOT_FILES }}"
 #       - name: Convert .dot files to .svg
