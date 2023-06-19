@@ -8,15 +8,31 @@ on:
 
 jobs:
   dot:
-    name: Compile .dot files
+    name: Render .dot files as .svg
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Setup Graphviz
+        uses: ts-graphviz/setup-graphviz@v1
+      - name: Checkout repository
         uses: actions/checkout@v2
         with:
           ref: ${{ github.head_ref }}
-      - name: Compile .dot files
-        uses: alexrothenberg/digraph-to-svg-action@0.1.0
-        with:
-          # GitHub Token
-          githubToken: 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
+      - name: List .dot files
+        id: list-files
+        run: echo "::set-output name=FILELIST::$(find . -name '*.dot' -print)"
+      - name: Debug
+        run: |
+          IFS="," read -a dot_dot_files <<< ${{ steps.list-files.outputs.FILELIST }}
+          for i in "${dot_dot_files[@]}"; do
+            file_path=$(dirname "${i}")
+            file_name=$(basename "${i}")
+            cd file_path
+            cat file_name
+          done
+#       - name: Convert .dot files to .svg
+#       - name: Upload .svg as artifacts
+#         uses: actions/upload-artifact@v3
+#         with:
+#           name: 
+#           path: my_file.txt
+#           retention-days: 1
