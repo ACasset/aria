@@ -11,35 +11,19 @@ jobs:
     name: Render .dot files as .svg
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Graphviz
-        uses: ts-graphviz/setup-graphviz@v1
+      - name: Install Graphviz
+        # sudo apt update
+        run: sudo apt install -y graphviz
+        # libgraphviz-dev
+        # pkg-config
       - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }}
-#       - name: List .dot files
-#         id: list-files
-#         run: |
-#           dot_files=[
-#           for dot_file in $(find . -name '*.dot' -print); do
-#            dot_files=$dot_files"$dot_file",
-#           done
-#           dot_files=${dot_files::-1}]
-#           echo $dot_files
-#           echo "DOT_FILES=$dot_files" >> "$GITHUB_OUTPUT"
-#       - name: Debug
-#         run: echo "${{ fromJSON(steps.list-files.outputs.DOT_FILES) }}"
+        uses: actions/checkout@v3
       - name: Convert .dot files to .svg
         run: |
           for input_file in $(find . -name '*.dot' -print); do
             output_file=${input_file::-3}svg
             echo "Converting '$input_file' to '$output_file'"
             dot -Tsvg $input_file -o $output_file
-          done
-      - name: Debug
-        run: |
-          for svg_file in $(find . -name '*.svg' -print); do
-           echo "Found '$svg_file'"
           done
       - name: Upload .svg as artifacts
         uses: actions/upload-artifact@v3
