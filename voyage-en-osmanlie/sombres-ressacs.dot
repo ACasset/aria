@@ -12,7 +12,7 @@ digraph {
   10 -> { 161 258 93 }
   11 -> { 166 173 }
   12 -> { 60 }
-  13 -> { Mort }
+  13 -> { mort1 }
   14 -> { 78 }
   15 -> { 42 165 118 }
   16 -> { 223 54 }
@@ -30,15 +30,13 @@ digraph {
   28 -> { 205 }
   29 -> { 12 }
   30 -> { 187 }
-  31 -> { 39 } # 39 = sort étincelle
   32 -> { 175 }
   33 -> { 300 }
-  34 -> { Mort }
+  34 -> { mort }
   35 -> { 144 84 }
-  36 -> { Mort }
+  36 -> { mort }
   37 -> { 92 }
   38 -> { 267 258 }
-  39 -> { 103 } # 103 = sort parapluie
   40 -> { 20 }
   41 -> { 12 }
   42 -> { 124 121 }
@@ -53,7 +51,7 @@ digraph {
   51 -> { 259 }
   52 -> { 175 }
   53 -> { 30 116 }
-  54 -> { Mort }
+  54 -> { mort }
   55 -> { 29 260 }
   56 -> { 242 }
   57 -> { 187 }
@@ -64,7 +62,7 @@ digraph {
   62 -> { 60 }
   63 -> { 258 }
   64 -> { 163 }
-  65 -> { Mort }
+  65 -> { mort }
   66 -> { 87 }
   67 -> { 173 }
   68 -> { 190 96 }
@@ -85,7 +83,7 @@ digraph {
   83 -> { 63 258 }
   84 -> { 98 107 }
   85 -> { 173 }
-  86 -> { Mort }
+  86 -> { mort }
   87 -> { 175 35 }
   88 -> { 6 180 }
   89 -> { 180 }
@@ -94,23 +92,23 @@ digraph {
   92 -> { 112 }
   93 -> { 224 78 }
   94 -> { 258 }
-  95 -> { Mort }
+  95 -> { mort }
   96 -> { 69 204 }
-  97 -> { Mort }
+  97 -> { mort }
   98 -> { 51 168 40 249 }
-  99 -> { Mort }
+  99 -> { mort }
   100 -> { 252 }
   101 -> { 11 173 }
   102 -> { 50 }
   103 -> { 43 }
   104 -> { 300 }
-  105 -> { 157 113 } # 113 = sort étincelle
+  105 -> { 157 }
   106 -> { 10 210 157 }
   107 -> { 5 264 }
-  108 -> { Mort }
+  108 -> { mort }
   109 -> { 215 157 }
   110 -> { 20 }
-  111 -> { Mort }
+  111 -> { mort }
   112 -> { 14 }
   113 -> { 157 }
   114 -> { 214 28 }
@@ -119,20 +117,20 @@ digraph {
   117 -> { 175 }
   118 -> { 150 }
   119 -> { 95 76 143 } # 143 = objet Renard
-  120 -> { Mort }
-  121 -> { Mort }
+  120 -> { mort }
+  121 -> { mort }
   122 -> { 58 }
   123 -> { 193 }
   124 -> { 187 }
   125 -> { 270 46 7 149 }
   126 -> { 194 }
-  127 -> { 6 180 191 } # 191 = sort parapluie
-  128 -> { Mort }
+  127 -> { 6 180 }
+  128 -> { mort }
   129 -> { 175 }
   130 -> { 195 117 }
   131 -> { 208 }
   132 -> { 100 252 }
-  133 -> { Mort 197 } # 197 = sort parapluie
+  133 -> { mort }
   134 -> { 173 }
   135 -> { 258 }
   136 -> { 198 }
@@ -144,44 +142,44 @@ digraph {
   142 -> { 157 17 262 }
   143 -> { 49 170 }
   144 -> { 84 }
-  145 -> { 132 209 } # 209 = sort parapluie
+  145 -> { 132 }
   146 -> { 175 }
   147 -> { 217 136 }
   148 -> { 176 }
   149 -> { 296 175 }
   150 -> { 53 }
   151 -> { 175 }
-  152 # ???
+  152
   153 -> { 115 }
   154 -> { 173 }
   155 -> { 199 }
   156 -> { 126 }
   157 -> { 106 230 298 286 22 } # Hub Sannakale
-  158 -> { 169 221 171 } # 171 = sort ouverture
+  158 -> { 169 221 }
   159 -> { 21 }
   160 -> { 157 8 }
   161 -> { 207 }
   162 -> { 173 }
   163 -> { 158 97 }
   164 -> { 175 }
-  165 -> { Mort }
+  165 -> { mort }
   166 -> { 173 }
   167 -> { 157 }
   168 -> { 110 51 }
   169 -> { 247 }
-  170 -> { 128 285 76 234 } # 234 = sort parapluie
+  170 -> { 128 285 76 }
   171 -> { 247 }
   172 -> { 175 }
-  173 -> { 19 248 178 74 188 291 134 154 266 253 162 67 101 138 182 } # Bataille finale
-  174 -> { 126 238 } # 238 = sort parapluie
-  175 -> { 35 257 251 199 125 } # Place centrale des temples
+  173 -> { 19 248 178 74 188 291 134 154 266 253 162 67 101 138 182 }
+  174 -> { 126 }
+  175 -> { 35 257 251 199 125 }
   176 -> { 148 111 2 }
   177 -> { 295 }
   178 -> { 173 }
   179 -> { 92 }
   180 -> { 211 133 }
   181 -> { 219 }
-  182 -> { Mort 246 } # 246 = sort parapluie
+  182 -> { mort }
   183 -> { 298 }
   184 -> { 14 }
   185 -> { 230 }
@@ -189,9 +187,9 @@ digraph {
   187 -> { 71 50 }
   188 -> { 173 }
   189 -> { 176 }
-  190 -> { Mort }
+  190 -> { mort }
   191 -> { 180 }
-  192 # Remerciements
+  192
   193 -> { 123 137 108 }
   194 -> { 250 }
   195 -> { 117 32 }
@@ -199,38 +197,38 @@ digraph {
   197 -> { 213 }
   198 -> { 127 180 }
   199 -> { 289 155 294 175 }
-  200 # Voyage dans le temps
+  200
   201 -> { 151 129 }
   202 -> { 135 258 }
   203 -> { 139 271 }
-  204 -> { Mort }
+  204 -> { mort }
   205 -> { 147 198 }
   206 -> { 298 }
   207 -> { 10 }
   208 -> { 177 }
   209 -> { 132 }
-  210 -> { Mort 274 } # 274 = sort parapluie
-  211 -> { 213 219 } # 219 = sort étincelle
-  212 -> { Mort 220 } # 220 = sort étincelle
+  210 -> { mort }
+  211 -> { 213 }
+  212 -> { mort }
   213 -> { 82 122 }
-  214 -> { Mort 222 } # 222 = sort étincelle
+  214 -> { mort }
   215 -> { 157 }
   216 -> { 157 }
   217 -> { 273 }
   218 -> { 258 }
-  219 -> { 181 213 232 } # 232 = sort ouverture
-  220 -> { Mort 284 } # 284 = sort parapluie
+  219 -> { 181 213 }
+  220 -> { mort }
   221 -> { 247 }
   222 -> { 205 }
   223 -> { 99 120 }
   224 -> { 244 }
   225 -> { 87 }
   226 -> { 228 114 }
-  227 -> { Mort }
+  227 -> { mort }
   228 -> { 245 }
   229 -> { 64 }
-  230 -> { 157 292 279 141 185 } # Port de Sannakale
-  231 -> { Mort }
+  230 -> { 157 292 279 141 185 }
+  231 -> { mort1 }
   232 -> { 219 }
   233 -> { 263 157 }
   234 -> { 36 153 }
@@ -242,20 +240,20 @@ digraph {
   240 -> { 258 }
   241 -> { 77 60 }
   242 -> { 186 48 }
-  243 -> { 59 256 } # 256 = sort ouverture
+  243 -> { 59 }
   244 -> { 76 }
   245 -> { 114 }
-  246 -> { Mort 254 } # 254 = sort étincelle
+  246 -> { mort }
   247 -> { 91 }
   248 -> { 173 }
   249 -> { 20 }
   250 -> { 87 }
   251 -> { 130 175 }
-  252 -> { 179 80 56 184  282 }
+  252 -> { 179 80 56 184 282 }
   253 -> { 173 }
   254 -> { 45 131 }
   255 -> { 102 }
-  256 -> { 59 } # Apprentissage du sort "dissolution de la glaise"
+  256 -> { 59 } # /!\ Apprentissage du sort "dissolution de la glaise"
   257 -> { 201 175 }
   258 -> { 240 290 202 83 38 10 }
   259 -> { 20 }
@@ -267,18 +265,18 @@ digraph {
   265 -> { 259 }
   266 -> { 173 }
   267 -> { 94 218 }
-  268 -> { Mort 276 } # 276 = sort étincelle
-  269 -> { Mort }
+  268 -> { mort1 }
+  269 -> { mort }
   270 -> { 149 }
   271 -> { 139 }
   272 -> { 21 }
   273 -> { 34 198 }
   274 -> { 244 157 }
-  275 -> { Mort }
+  275 -> { mort }
   276 -> { 23 }
   277 -> { 173 }
   278 -> { 157 }
-  279 -> { 230 Mort }
+  279 -> { 230 mort }
   280 -> { 298 }
   281 -> { 33 104 236 }
   282 -> { 297 25 242 }
@@ -296,51 +294,81 @@ digraph {
   294 -> { 261 }
   295 -> { 293 281 }
   296 -> { 175 }
-  297 -> { Mort }
-  298 -> { 183 288 237 280 206 196 160 } # Marché
+  297 -> { mort }
+  298 -> { 183 288 237 280 206 196 160 }
   299 -> { 21 }
   300 -> { Fin }
 
   # Zones
 
+  subgraph cluster_easter_eggs {
+    label = "Easter eggs"
+
+    # Pages
+    152 192 200
+  }
+
   subgraph cluster_varna {
     label = "Varna"
 
     # Pages
+    1 31 39 103 43 231 13 287 268 276
 
     # Parcours
 
   }
 
-  subgraph cluster_foret {
-    label = "Forêt de ..."
+  subgraph cluster_foret_bolayir {
+    label = "Forêt du Bolayir"
 
     # Pages
+    23 189 176 148 111 2 47 
 
     # Parcours
     
   }
 
-  subgraph cluster_temples {
-    label = "Temples"
+  subgraph cluster_lande_tekirdag {
+    label = "Lande de Tekirdag"
+
+    16
+  }
+
+
+
+  subgraph cluster_croisee_chemins {
+    label = "Croisée des chemins"
 
     # Pages
+    175
 
     # Parcours
     
-    subgraph cluster_temples_enlil {
+    subgraph cluster_croisee_chemins_temple_enlil {
       label = "Temple d'Enlil"
 
       # Pages
+      199 155 294 289 261 52 18 3 146 172 164
 
       # Parcours
     
     }
 
-    subgraph cluster_temples_qalil {
+    subgraph cluster_croisee_chemins_temple_qalil {
       label = "Temple de Qalil"
 
       # Pages
+      251 130 195 117 32
+
+      # Parcours
+    
+    }
+
+    subgraph cluster_croisee_chemins_temple_dagan {
+      label = "Temple de Dagan"
+
+      # Pages
+      257 201 129 151
 
       # Parcours
     
@@ -351,10 +379,70 @@ digraph {
     label = "Sannakale"
 
     # Pages
+    157 [ label = "157\nPlace centrale"]
 
     # Parcours
+
+    subgraph cluster_sannakale_palais {
+      label = "Palais du Khan"
+
+      106
+    }
+
+    subgraph cluster_sannakale_port {
+      label = "Port de l'Aigle d'Argent"
+
+      230 292 279 141 185
+    }
+
+    subgraph cluster_sannakale_bazar {
+      label = "Bazar mystique"
+
+      298 183 288 237 280 206 196 160 8 216 109 167
+    }
+
+    subgraph cluster_sannakale_academie {
+      label = "Académie des Étoiles"
+
+      286
+    }
+
+    subgraph cluster_sannakale_ombres {
+      label = "Ombres furtives"
+
+      22
+    }
+
+    subgraph cluster_sannakale_estuaire {
+      label = "Estuaire"
+
+      62
+    }
+
+    subgraph cluster_sannakale_forteresse {
+      label = "Forteresse des Renards"
+
+      subgraph cluster_sannakale_forteresse_geoles {
+        label = "Geôles de la forteresse des Renards"
+
+        60 241 86 163 73 158 169 171 221 247
+      }
+
+      subgraph cluster_sannakale_forteresse_cour {
+        label = "Cour de la forteresse des Renards"
+
+        91 173 291 266 253 19 67 74 134 154 162 248 178 188 182 101 246 11 254 166 138 72 140 85 277 131 208 45
+      }
+    }
     
+    subgraph cluster_epilogue {
+      label = "Épilogue"
+
+      177 295 293 281 33 104 236 300
+    }
   }
+
+  
 
   # Actions
 
@@ -363,17 +451,39 @@ digraph {
     
     subgraph etincelle { # 8
       edge [ color = red ]
-      
+
+      31 -> 39
+      105 -> 113
+      211 -> 219
+      212 -> 220
+      214 -> 222
+      246 -> 254
+      268 -> 276
     }
 
     subgraph parapluie { # 64
       edge [ color = blue ]
-      
+
+      6 -> 70
+      39 -> 103
+      127 -> 191
+      133 -> 197
+      145 -> 209
+      170 -> 234
+      174 -> 238
+      182 -> 246
+      210 -> 274
+      220 -> 284
     }
 
     subgraph ouverture { # 13
       edge [ color = green ]
 
+      60 -> 73
+      72 -> 85
+      158 -> 171
+      219 -> 232
+      243 -> 256
     }
 
     subgraph dissolution_de_la_glaise { # 88
@@ -384,6 +494,8 @@ digraph {
 
   subgraph morts {
     edge [ arrowhead = tee, color = black ]
+    node [ label = "Mort" ]
     
+    mort1 mort2 mort3 mort4 
   }
 }
