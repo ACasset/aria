@@ -280,27 +280,35 @@ digraph {
 
     # Pages
     1 31 39 103 43 231 13 287 268 276
+
+    # Morts
+    mort01 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    13 -> mort01 [ arrowhead = tee ]
+    mort02 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    231 -> mort02 [ arrowhead = tee ]
+    mort03 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    268 -> mort03 [ arrowhead = tee ]
   }
 
   subgraph cluster_foret_bolayir {
     label = "Forêt du Bolayir"
 
     # Pages
-    23 189 176 148 111 2 47 81 122 58 4 137 193 123 108 225 75 165 42 15 124 121 187 118 150 53 30 116 212 220 284 57 71 255 102 50 283 26 89
-  }
+    23 189 176 148 111 2 47 81 75 165 42 15 124 121 187 118 150 53 30 116 212 220 284 57 71 255 102 50 283 26 89
 
-  subgraph cluster_cote_mer_marmoreenne {
-    label = "Côte de la mer Marmoréenne"
-
-    # Pages
-    226 228 114 245 28 214 222 205 147 198 136 217 273 127 6 88 70 191 34
-  }
-
-  subgraph cluster_peninsule_galibolu {
-    label = "Péninsule du Galibolu"
-
-    # Pages
-    180 211 133 219 197 181 232 213 82 90 156 24 174 238 126 299 159 235 272 21 227 66 194 250
+    # Morts
+    mort04 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    71 -> mort04 [ arrowhead = tee ]
+    mort05 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    111 -> mort05 [ arrowhead = tee ]
+    mort06 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    121 -> mort06 [ arrowhead = tee ]
+    mort07 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    165 -> mort07 [ arrowhead = tee ]
+    mort08 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    212 -> mort08 [ arrowhead = tee ]
+    mort09 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    220 -> mort09 [ arrowhead = tee ]
   }
 
   subgraph cluster_lande_tekirdag {
@@ -308,13 +316,57 @@ digraph {
 
     # Pages
     16 223 54 99 120
+
+    # Morts
+    mort10 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    54 -> mort10 [ arrowhead = tee ]
+    mort11 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    99 -> mort11 [ arrowhead = tee ]
+    mort12 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    120 -> mort12 [ arrowhead = tee ]
+  }
+
+  subgraph cluster_cote_mer_marmoreenne {
+    label = "Côte de la mer Marmoréenne"
+
+    # Pages
+    226 228 114 245 28 214 222 205 147 198 136 217 273 127 6 88 70 191 34
+
+    # Morts
+    mort13 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    34 -> mort13 [ arrowhead = tee ]
+    mort14 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    214 -> mort14 [ arrowhead = tee ]
+  }
+
+  subgraph cluster_peninsule_galibolu {
+    label = "Péninsule du Galibolu"
+
+    # Pages
+    180 211 133 219 197 181 232 213 82 90 156 24 174 238 126 299 159 235 272 21 227 66 194 250
+
+    # Morts
+    mort15 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    133 -> mort15 [ arrowhead = tee ]
+    mort16 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    227 -> mort16 [ arrowhead = tee ]
+  }
+
+  subgraph cluster_foret_bolayir_bis {
+    label = "Forêt du Bolayir (bis)"
+
+    # Pages
+    122 58 4 137 193 123 108 225
+
+    # Morts
+    mort17 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    108 -> mort17 [ arrowhead = tee ]
   }
 
   subgraph cluster_croisee_chemins {
     label = "Croisée des chemins"
 
     # Pages
-    87
     175 [ label = "175\nPlace centrale"]
 
     subgraph cluster_croisee_chemins_etals {
@@ -351,6 +403,16 @@ digraph {
 
     # Pages
     35 144 84 98 107 264 5 265 44 98 51 168 40 249 259 110 20 145 132 209 100 252 179 80 56 184 282 297 25 242 27 186 37 65 92 14 112 48 68 190 96 69 204
+
+    # Morts
+    mort18 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    65 -> mort18 [ arrowhead = tee ]
+    mort19 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    190 -> mort19 [ arrowhead = tee ]
+    mort20 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    204 -> mort20 [ arrowhead = tee ]
+    mort21 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+    297 -> mort21 [ arrowhead = tee ]
   }
 
   subgraph cluster_sannakale {
@@ -378,6 +440,10 @@ digraph {
 
       # Pages
       106 10 210 274 244 161 258 93 224 79 240 290 202 83 38 135 63 267 94 218 207
+
+      # Morts
+      mort22 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+      210 -> mort22 [ arrowhead = tee ]
     }
 
     subgraph cluster_sannakale_port {
@@ -385,12 +451,23 @@ digraph {
 
       # Pages
       230 292 279 141 185 275
+
+      # Morts
+      mort23 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+      275 -> mort23 [ arrowhead = tee ]
+      mort24 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+      279 -> mort24 [ arrowhead = tee ]
     }
 
     subgraph cluster_sannakale_port_dame_a {
-        label = "Port de l'aigle d'Argent (avec Dame A.)"
+      label = "Port de l'aigle d'Argent (avec Dame A.)"
 
-        76 170 119 143 95
+      # Pages
+      76 170 119 143 95
+
+      # Morts
+      mort25 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+      95 -> mort25 [ arrowhead = tee ]
     }
 
     subgraph cluster_sannakale_bazar {
@@ -419,6 +496,14 @@ digraph {
 
       # Pages
       62 128 285 234 36 153 61 59 115 243 256 229 49 203 271 139 269
+
+      # Morts
+      mort26 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+      36 -> mort26 [ arrowhead = tee ]
+      mort27 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+      128 -> mort27 [ arrowhead = tee ]
+      mort28 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+      269 -> mort28 [ arrowhead = tee ]
     }
 
     subgraph cluster_sannakale_forteresse {
@@ -429,6 +514,12 @@ digraph {
 
         # Pages
         12 64 60 241 77 86 163 73 158 169 171 221 247 97
+
+        # Morts
+        mort29 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+        86 -> mort29 [ arrowhead = tee ]
+        mort30 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+        97 -> mort30 [ arrowhead = tee ]
       }
 
       subgraph cluster_sannakale_forteresse_cour {
@@ -436,15 +527,21 @@ digraph {
 
         # Pages
         91 173 291 266 253 19 67 74 134 154 162 248 178 188 182 101 246 11 254 166 138 72 140 85 277 131 208 45
+
+        # Morts
+        mort31 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+        182 -> mort31 [ arrowhead = tee ]
+        mort32 [ style = filled, color = black, fontcolor = white, label = "Mort" ]
+        246 -> mort32 [ arrowhead = tee ]
       }
     }
-    
-    subgraph cluster_epilogue {
-      label = "Épilogue"
+  }
 
-      # Pages
-      177 295 293 281 33 104 236 300
-    }
+  subgraph cluster_epilogue {
+    label = "Épilogue"
+
+    # Pages
+    177 295 293 281 33 104 236 300
   }
 
   subgraph magie {
@@ -491,58 +588,5 @@ digraph {
       edge [ color = brown ]
 
     }
-  }
-
-  subgraph morts {
-    edge [ arrowhead = tee, color = black ]
-    node [ style = filled, color = black, fontcolor = white, label = "Mort" ]
-
-    # Varna
-    13 -> { mort1 }
-    231 -> { mort1 }
-    268 -> { mort1 }
-
-    # Forêt du Bolayir
-    71 -> { mort2 }
-    108 -> { mort2 }
-    111 -> { mort2 }
-    121 -> { mort2 }
-    165 -> { mort2 }
-    212 -> { mort2 }
-    220 -> { mort2 }
-
-    # Côte de la mer Marmoréenne
-    34 -> { mort3 }
-    214 -> { mort3 }
-
-    # Péninsule de Galibolu
-    133 -> { mort4 }
-    227 -> { mort4 }
-
-    # Lande de Tekirdag
-    54 -> { mort5 }
-    99 -> { mort5 }
-    120 -> { mort5 }
-
-    # Route des brumes
-    65 -> { mort6 }
-    190 -> { mort6 }
-    204 -> { mort6 }
-    297 -> { mort6 }
-
-    # Sannakale
-    36 -> { mort7 }
-    95 -> { mort7 }
-    128 -> { mort7 }
-    210 -> { mort7 }
-    269 -> { mort7 }
-    275 -> { mort7 }
-    279 -> { mort7 }
-
-    # Sannakale (Forteresse des Renards)
-    86 -> { mort8 }
-    97 -> { mort8 }
-    182 -> { mort8 }
-    246 -> { mort8 }
   }
 }
