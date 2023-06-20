@@ -286,7 +286,14 @@ digraph {
     label = "Forêt du Bolayir"
 
     # Pages
-    23 189 176 148 111 2 47 81 122 58 4 137 193 123 108 225 75 165 42 15 124 121 187 118 150 53 30 116 212 220 284 57 71 255 102 50
+    23 189 176 148 111 2 47 81 122 58 4 137 193 123 108 225 75 165 42 15 124 121 187 118 150 53 30 116 212 220 284 57 71 255 102 50 283 26 89
+  }
+
+  subgraph cluster_cote_mer_marmoreenne {
+    label = "Côte de la mer Marmoréenne"
+
+    # Pages
+    226 228 114 245 28 214 222 205 147 198 136 217 273 127 6 88 70 191 34
   }
 
   subgraph cluster_peninsule_galibolu {
@@ -489,16 +496,7 @@ digraph {
   subgraph morts {
     edge [ arrowhead = tee, color = black ]
     node [ style = filled, color = black, fontcolor = white, label = "Mort" ]
-    
-    34 -> { mort }
-    36 -> { mort }
-    86 -> { mort }
-    111 -> { mort }
-    128 -> { mort }
-    210 -> { mort }
-    214 -> { mort }
-    279 -> { mort }
-    
+
     # Varna
     13 -> { mort1 }
     231 -> { mort1 }
@@ -507,34 +505,44 @@ digraph {
     # Forêt du Bolayir
     71 -> { mort2 }
     108 -> { mort2 }
+    111 -> { mort2 }
     121 -> { mort2 }
     165 -> { mort2 }
     212 -> { mort2 }
     220 -> { mort2 }
 
+    # Côte de la mer Marmoréenne
+    34 -> { mort3 }
+    214 -> { mort3 }
+
     # Péninsule de Galibolu
-    133 -> { mort3 }
-    227 -> { mort3 }
+    133 -> { mort4 }
+    227 -> { mort4 }
 
     # Lande de Tekirdag
-    54 -> { mort4 }
-    99 -> { mort4 }
-    120 -> { mort4 }
+    54 -> { mort5 }
+    99 -> { mort5 }
+    120 -> { mort5 }
 
     # Route des brumes
-    65 -> { mort5 }
-    190 -> { mort5 }
-    204 -> { mort5 }
-    297 -> { mort5 }
+    65 -> { mort6 }
+    190 -> { mort6 }
+    204 -> { mort6 }
+    297 -> { mort6 }
 
     # Sannakale
-    95 -> { mort6 }
-    269 -> { mort6 }
-    275 -> { mort6 }
+    36 -> { mort7 }
+    95 -> { mort7 }
+    128 -> { mort7 }
+    210 -> { mort7 }
+    269 -> { mort7 }
+    275 -> { mort7 }
+    279 -> { mort7 }
 
     # Sannakale (Forteresse des Renards)
-    97 -> { mort7 }
-    182 -> { mort7 }
-    246 -> { mort7 }
+    86 -> { mort8 }
+    97 -> { mort8 }
+    182 -> { mort8 }
+    246 -> { mort8 }
   }
 }
