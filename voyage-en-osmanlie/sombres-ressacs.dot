@@ -286,7 +286,14 @@ digraph {
     label = "Forêt du Bolayir"
 
     # Pages
-    23 189 176 148 111 2 47 
+    23 189 176 148 111 2 47 81 122 58 4 137 193
+  }
+
+  subgraph cluster_peninsule_galibolu {
+    label = "Péninsule du Galibolu"
+
+    # Pages
+    180 211 133 219 197 181 232 213 82 90 156
   }
 
   subgraph cluster_lande_tekirdag {
@@ -485,7 +492,6 @@ digraph {
     120 -> { mort }
     121 -> { mort }
     128 -> { mort }
-    133 -> { mort }
     165 -> { mort }
     182 -> { mort }
     210 -> { mort }
@@ -506,19 +512,23 @@ digraph {
     mort2 [ label = "Mort" ]
     227 -> { mort2 }
 
+    # Péninsule de Galibolu
+    mort3 [ label = "Mort" ] 
+    133 -> { mort3 }
+
     # Route des brumes
-    mort3 [ label = "Mort" ]
-    65 -> { mort3 }
-    190 -> { mort3 }
-    204 -> { mort3 }
-    297 -> { mort3 }
+    mort4 [ label = "Mort" ]
+    65 -> { mort4 }
+    190 -> { mort4 }
+    204 -> { mort4 }
+    297 -> { mort4 }
 
     # Sannakale
-    mort4 [ label = "Mort" ]
-    95 -> { mort4 }
+    mort5 [ label = "Mort" ]
+    95 -> { mort5 }
 
     # Sannakale (Forteresse des Renards)
-    mort5 [ label = "Mort" ]
-    246 -> { mort5 }
+    mort6 [ label = "Mort" ]
+    246 -> { mort6 }
   }
 }
