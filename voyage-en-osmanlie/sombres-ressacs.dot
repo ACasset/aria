@@ -300,7 +300,7 @@ digraph {
     label = "Lande de Tekirdag"
 
     # Pages
-    16
+    16 223 54 99 120
   }
 
   subgraph cluster_croisee_chemins {
@@ -351,13 +351,19 @@ digraph {
 
     # Pages
     157 [ label = "157\nPlace centrale"]
-    239 278 142 262 17 41
-
+    
     subgraph cluster_sannakale_portes {
       label = "Portes de la ville"
 
       # Pages
       78 233 263
+    }
+
+    subgraph cluster_sannakale_fontaine {
+      label = "Fontaine"
+
+      # Pages
+      239 278 142 262 17 41
     }
 
     subgraph cluster_sannakale_palais {
@@ -371,7 +377,7 @@ digraph {
       label = "Port de l'Aigle d'Argent"
 
       # Pages
-      230 292 279 141 185
+      230 292 279 141 185 275
     }
 
     subgraph cluster_sannakale_port_dame_a {
@@ -405,7 +411,7 @@ digraph {
       label = "Estuaire"
 
       # Pages
-      62 128 285 234 36 153 61 59 115
+      62 128 285 234 36 153 61 59 115 243 256 229 49 203 271 139 269
     }
 
     subgraph cluster_sannakale_forteresse {
@@ -415,7 +421,7 @@ digraph {
         label = "Geôles de la forteresse des Renards"
 
         # Pages
-        12 64 60 241 77 86 163 73 158 169 171 221 247
+        12 64 60 241 77 86 163 73 158 169 171 221 247 97
       }
 
       subgraph cluster_sannakale_forteresse_cour {
@@ -486,18 +492,11 @@ digraph {
     
     34 -> { mort }
     36 -> { mort }
-    54 -> { mort }
     86 -> { mort }
-    97 -> { mort }
-    99 -> { mort }
     111 -> { mort }
-    120 -> { mort }
     128 -> { mort }
-    182 -> { mort }
     210 -> { mort }
     214 -> { mort }
-    269 -> { mort }
-    275 -> { mort }
     279 -> { mort }
     
     # Varna
@@ -518,7 +517,9 @@ digraph {
     227 -> { mort3 }
 
     # Lande de Tekirdag
-
+    54 -> { mort4 }
+    99 -> { mort4 }
+    120 -> { mort4 }
 
     # Route des brumes
     65 -> { mort5 }
@@ -528,8 +529,12 @@ digraph {
 
     # Sannakale
     95 -> { mort6 }
+    269 -> { mort6 }
+    275 -> { mort6 }
 
     # Sannakale (Forteresse des Renards)
+    97 -> { mort7 }
+    182 -> { mort7 }
     246 -> { mort7 }
   }
 }
