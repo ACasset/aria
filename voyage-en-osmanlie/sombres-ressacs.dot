@@ -286,14 +286,14 @@ digraph {
     label = "Forêt du Bolayir"
 
     # Pages
-    23 189 176 148 111 2 47 81 122 58 4 137 193
+    23 189 176 148 111 2 47 81 122 58 4 137 193 123 108 225 75 165 42 15 124 121 187 118 150 53 30 116 212 220 284 57 71 255 102 50
   }
 
   subgraph cluster_peninsule_galibolu {
     label = "Péninsule du Galibolu"
 
     # Pages
-    180 211 133 219 197 181 232 213 82 90 156
+    180 211 133 219 197 181 232 213 82 90 156 24 174 238 126 299 159 235 272 21 227 66 194 250
   }
 
   subgraph cluster_lande_tekirdag {
@@ -307,6 +307,7 @@ digraph {
     label = "Croisée des chemins"
 
     # Pages
+    87
     175 [ label = "175\nPlace centrale"]
 
     subgraph cluster_croisee_chemins_etals {
@@ -481,6 +482,7 @@ digraph {
 
   subgraph morts {
     edge [ arrowhead = tee, color = black ]
+    node [ style = filled, color = black, fontcolor = white, label = "Mort" ]
     
     34 -> { mort }
     36 -> { mort }
@@ -488,48 +490,46 @@ digraph {
     86 -> { mort }
     97 -> { mort }
     99 -> { mort }
-    108 -> { mort }
     111 -> { mort }
     120 -> { mort }
-    121 -> { mort }
     128 -> { mort }
-    165 -> { mort }
     182 -> { mort }
     210 -> { mort }
-    212 -> { mort }
     214 -> { mort }
-    220 -> { mort }
     269 -> { mort }
     275 -> { mort }
     279 -> { mort }
     
     # Varna
-    mort1 [ label = "Mort" ]
     13 -> { mort1 }
     231 -> { mort1 }
     268 -> { mort1 }
 
     # Forêt du Bolayir
-    mort2 [ label = "Mort" ]
-    227 -> { mort2 }
+    71 -> { mort2 }
+    108 -> { mort2 }
+    121 -> { mort2 }
+    165 -> { mort2 }
+    212 -> { mort2 }
+    220 -> { mort2 }
 
     # Péninsule de Galibolu
-    mort3 [ label = "Mort" ] 
     133 -> { mort3 }
+    227 -> { mort3 }
+
+    # Lande de Tekirdag
+
 
     # Route des brumes
-    mort4 [ label = "Mort" ]
-    65 -> { mort4 }
-    190 -> { mort4 }
-    204 -> { mort4 }
-    297 -> { mort4 }
+    65 -> { mort5 }
+    190 -> { mort5 }
+    204 -> { mort5 }
+    297 -> { mort5 }
 
     # Sannakale
-    mort5 [ label = "Mort" ]
-    95 -> { mort5 }
+    95 -> { mort6 }
 
     # Sannakale (Forteresse des Renards)
-    mort6 [ label = "Mort" ]
-    246 -> { mort6 }
+    246 -> { mort7 }
   }
 }
