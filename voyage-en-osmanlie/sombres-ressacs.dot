@@ -1,5 +1,4 @@
 digraph {
-  # Ordre croissant
   1 -> { 31 }
   2 -> { 75 }
   3 -> { 175 }
@@ -12,7 +11,6 @@ digraph {
   10 -> { 161 258 93 }
   11 -> { 166 173 }
   12 -> { 60 }
-  13 -> { mort1 }
   14 -> { 78 }
   15 -> { 42 165 118 }
   16 -> { 223 54 }
@@ -32,9 +30,7 @@ digraph {
   30 -> { 187 }
   32 -> { 175 }
   33 -> { 300 }
-  34 -> { mort }
   35 -> { 144 84 }
-  36 -> { mort }
   37 -> { 92 }
   38 -> { 267 258 }
   40 -> { 20 }
@@ -51,7 +47,6 @@ digraph {
   51 -> { 259 }
   52 -> { 175 }
   53 -> { 30 116 }
-  54 -> { mort }
   55 -> { 29 260 }
   56 -> { 242 }
   57 -> { 187 }
@@ -62,7 +57,6 @@ digraph {
   62 -> { 60 }
   63 -> { 258 }
   64 -> { 163 }
-  65 -> { mort }
   66 -> { 87 }
   67 -> { 173 }
   68 -> { 190 96 }
@@ -83,7 +77,6 @@ digraph {
   83 -> { 63 258 }
   84 -> { 98 107 }
   85 -> { 173 }
-  86 -> { mort }
   87 -> { 175 35 }
   88 -> { 6 180 }
   89 -> { 180 }
@@ -92,11 +85,8 @@ digraph {
   92 -> { 112 }
   93 -> { 224 78 }
   94 -> { 258 }
-  95 -> { mort }
   96 -> { 69 204 }
-  97 -> { mort }
   98 -> { 51 168 40 249 }
-  99 -> { mort }
   100 -> { 252 }
   101 -> { 11 173 }
   102 -> { 50 }
@@ -105,10 +95,8 @@ digraph {
   105 -> { 157 }
   106 -> { 10 210 157 }
   107 -> { 5 264 }
-  108 -> { mort }
   109 -> { 215 157 }
   110 -> { 20 }
-  111 -> { mort }
   112 -> { 14 }
   113 -> { 157 }
   114 -> { 214 28 }
@@ -117,20 +105,16 @@ digraph {
   117 -> { 175 }
   118 -> { 150 }
   119 -> { 95 76 143 } # 143 = objet Renard
-  120 -> { mort }
-  121 -> { mort }
   122 -> { 58 }
   123 -> { 193 }
   124 -> { 187 }
   125 -> { 270 46 7 149 }
   126 -> { 194 }
   127 -> { 6 180 }
-  128 -> { mort }
   129 -> { 175 }
   130 -> { 195 117 }
   131 -> { 208 }
   132 -> { 100 252 }
-  133 -> { mort }
   134 -> { 173 }
   135 -> { 258 }
   136 -> { 198 }
@@ -162,7 +146,6 @@ digraph {
   162 -> { 173 }
   163 -> { 158 97 }
   164 -> { 175 }
-  165 -> { mort }
   166 -> { 173 }
   167 -> { 157 }
   168 -> { 110 51 }
@@ -179,7 +162,6 @@ digraph {
   179 -> { 92 }
   180 -> { 211 133 }
   181 -> { 219 }
-  182 -> { mort }
   183 -> { 298 }
   184 -> { 14 }
   185 -> { 230 }
@@ -187,7 +169,6 @@ digraph {
   187 -> { 71 50 }
   188 -> { 173 }
   189 -> { 176 }
-  190 -> { mort }
   191 -> { 180 }
   192
   193 -> { 123 137 108 }
@@ -201,34 +182,27 @@ digraph {
   201 -> { 151 129 }
   202 -> { 135 258 }
   203 -> { 139 271 }
-  204 -> { mort }
   205 -> { 147 198 }
   206 -> { 298 }
   207 -> { 10 }
   208 -> { 177 }
   209 -> { 132 }
-  210 -> { mort }
   211 -> { 213 }
-  212 -> { mort }
   213 -> { 82 122 }
-  214 -> { mort }
   215 -> { 157 }
   216 -> { 157 }
   217 -> { 273 }
   218 -> { 258 }
   219 -> { 181 213 }
-  220 -> { mort }
   221 -> { 247 }
   222 -> { 205 }
   223 -> { 99 120 }
   224 -> { 244 }
   225 -> { 87 }
   226 -> { 228 114 }
-  227 -> { mort }
   228 -> { 245 }
   229 -> { 64 }
   230 -> { 157 292 279 141 185 }
-  231 -> { mort1 }
   232 -> { 219 }
   233 -> { 263 157 }
   234 -> { 36 153 }
@@ -243,7 +217,6 @@ digraph {
   243 -> { 59 }
   244 -> { 76 }
   245 -> { 114 }
-  246 -> { mort }
   247 -> { 91 }
   248 -> { 173 }
   249 -> { 20 }
@@ -265,18 +238,15 @@ digraph {
   265 -> { 259 }
   266 -> { 173 }
   267 -> { 94 218 }
-  268 -> { mort1 }
-  269 -> { mort }
   270 -> { 149 }
   271 -> { 139 }
   272 -> { 21 }
   273 -> { 34 198 }
   274 -> { 244 157 }
-  275 -> { mort }
   276 -> { 23 }
   277 -> { 173 }
   278 -> { 157 }
-  279 -> { 230 mort }
+  279 -> { 230 }
   280 -> { 298 }
   281 -> { 33 104 236 }
   282 -> { 297 25 242 }
@@ -294,12 +264,9 @@ digraph {
   294 -> { 261 }
   295 -> { 293 281 }
   296 -> { 175 }
-  297 -> { mort }
   298 -> { 183 288 237 280 206 196 160 }
   299 -> { 21 }
   300 -> { Fin }
-
-  # Zones
 
   subgraph cluster_easter_eggs {
     label = "Easter eggs"
@@ -313,9 +280,6 @@ digraph {
 
     # Pages
     1 31 39 103 43 231 13 287 268 276
-
-    # Parcours
-
   }
 
   subgraph cluster_foret_bolayir {
@@ -323,35 +287,33 @@ digraph {
 
     # Pages
     23 189 176 148 111 2 47 
-
-    # Parcours
-    
   }
 
   subgraph cluster_lande_tekirdag {
     label = "Lande de Tekirdag"
 
+    # Pages
     16
   }
-
-
 
   subgraph cluster_croisee_chemins {
     label = "Croisée des chemins"
 
     # Pages
-    175
+    175 [ label = "175\nPlace centrale"]
 
-    # Parcours
+    subgraph cluster_croisee_chemins_etals {
+      label = "Étals"
+
+      # Pages
+      125 270 7 46 149 296
+    }
     
     subgraph cluster_croisee_chemins_temple_enlil {
       label = "Temple d'Enlil"
 
       # Pages
       199 155 294 289 261 52 18 3 146 172 164
-
-      # Parcours
-    
     }
 
     subgraph cluster_croisee_chemins_temple_qalil {
@@ -359,9 +321,6 @@ digraph {
 
       # Pages
       251 130 195 117 32
-
-      # Parcours
-    
     }
 
     subgraph cluster_croisee_chemins_temple_dagan {
@@ -369,10 +328,14 @@ digraph {
 
       # Pages
       257 201 129 151
-
-      # Parcours
-    
     }
+  }
+
+  subgraph cluster_route_brumes {
+    label = "Route des brumes"
+
+    # Pages
+    35 144 84 98 107 264 5 265 44 98 51 168 40 249 259 110 20 145 132 209 100 252 179 80 56 184 282 297 25 242 27 186 37 65 92 14 112 48 68 190 96 69 204
   }
 
   subgraph cluster_sannakale {
@@ -381,42 +344,59 @@ digraph {
     # Pages
     157 [ label = "157\nPlace centrale"]
 
-    # Parcours
+    subgraph cluster_sannakale_portes {
+      label = "Portes de la ville"
+
+      # Pages
+      78 233 263
+    }
 
     subgraph cluster_sannakale_palais {
       label = "Palais du Khan"
 
-      106
+      # Pages
+      106 10 210 274 244 161 258 93 224 79 240 290 202 83 38 135 63 267 94 218
     }
 
     subgraph cluster_sannakale_port {
       label = "Port de l'Aigle d'Argent"
 
+      # Pages
       230 292 279 141 185
+    }
+
+    subgraph cluster_sannakale_port_dame_a {
+        label = "Port de l'aigle d'Argent (avec Dame A.)"
+
+        76 170 119 143 95
     }
 
     subgraph cluster_sannakale_bazar {
       label = "Bazar mystique"
 
-      298 183 288 237 280 206 196 160 8 216 109 167
+      # Pages
+      298 183 288 237 280 206 196 160 8 215 216 109 167
     }
 
     subgraph cluster_sannakale_academie {
       label = "Académie des Étoiles"
 
-      286
+      # Pages
+      286 55 9 29 260
     }
 
     subgraph cluster_sannakale_ombres {
       label = "Ombres furtives"
 
-      22
+      # Pages
+      22 105 113
     }
 
     subgraph cluster_sannakale_estuaire {
       label = "Estuaire"
 
-      62
+      # Pages
+      62 128 285 234 36 153 61 59 115
     }
 
     subgraph cluster_sannakale_forteresse {
@@ -425,12 +405,14 @@ digraph {
       subgraph cluster_sannakale_forteresse_geoles {
         label = "Geôles de la forteresse des Renards"
 
-        60 241 86 163 73 158 169 171 221 247
+        # Pages
+        12 64 60 241 77 86 163 73 158 169 171 221 247
       }
 
       subgraph cluster_sannakale_forteresse_cour {
         label = "Cour de la forteresse des Renards"
 
+        # Pages
         91 173 291 266 253 19 67 74 134 154 162 248 178 188 182 101 246 11 254 166 138 72 140 85 277 131 208 45
       }
     }
@@ -438,13 +420,10 @@ digraph {
     subgraph cluster_epilogue {
       label = "Épilogue"
 
+      # Pages
       177 295 293 281 33 104 236 300
     }
   }
-
-  
-
-  # Actions
 
   subgraph magie {
     edge [ arrowhead = icurve ]
@@ -486,7 +465,7 @@ digraph {
       243 -> 256
     }
 
-    subgraph dissolution_de_la_glaise { # 88
+    subgraph dissolution { # 88
       edge [ color = brown ]
 
     }
@@ -494,8 +473,52 @@ digraph {
 
   subgraph morts {
     edge [ arrowhead = tee, color = black ]
-    node [ label = "Mort" ]
     
-    mort1 mort2 mort3 mort4 
+    34 -> { mort }
+    36 -> { mort }
+    54 -> { mort }
+    86 -> { mort }
+    97 -> { mort }
+    99 -> { mort }
+    108 -> { mort }
+    111 -> { mort }
+    120 -> { mort }
+    121 -> { mort }
+    128 -> { mort }
+    133 -> { mort }
+    165 -> { mort }
+    182 -> { mort }
+    210 -> { mort }
+    212 -> { mort }
+    214 -> { mort }
+    220 -> { mort }
+    269 -> { mort }
+    275 -> { mort }
+    279 -> { mort }
+    
+    # Varna
+    mort1 [ label = "Mort" ]
+    13 -> { mort1 }
+    231 -> { mort1 }
+    268 -> { mort1 }
+
+    # Forêt du Bolayir
+    mort2 [ label = "Mort" ]
+    227 -> { mort2 }
+
+    # Route des brumes
+    mort3 [ label = "Mort" ]
+    65 -> { mort3 }
+    190 -> { mort3 }
+    204 -> { mort3 }
+    297 -> { mort3 }
+
+    # Sannakale
+    mort4 [ label = "Mort" ]
+    95 -> { mort4 }
+
+    # Sannakale (Forteresse des Renards)
+    mort5 [ label = "Mort" ]
+    246 -> { mort5 }
   }
 }
