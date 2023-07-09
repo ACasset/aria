@@ -71,28 +71,30 @@ digraph {
   318
 
   subgraph magie {
-  edge [ arrowhead = icurve ]
-  
-  subgraph etincelle { # 8
-    edge [ color = red ]
-
+    edge [ arrowhead = icurve ]
     
-  }
+    subgraph etincelle { # 8
+      edge [ color = red ]
 
-  subgraph parapluie { # 64
-    edge [ color = blue ]
+      # TODO
+    }
 
-    
-  }
+    subgraph parapluie { # 64
+      edge [ color = blue ]
 
-  subgraph ouverture { # 13
-    edge [ color = green ]
+      # TODO
+    }
 
-    85 -> 98
-  }
+    subgraph ouverture { # 13
+      edge [ color = green ]
 
-  subgraph dissolution { # 88
-    edge [ color = brown ]
+      85 -> 98
+    }
 
+    subgraph dissolution { # 88
+      edge [ color = brown ]
+
+      # TODO
+    }
   }
 }
