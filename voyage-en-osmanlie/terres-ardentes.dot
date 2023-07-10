@@ -33,7 +33,7 @@ digraph {
   32 -> { 61 }
   33 -> { 142 104 }
   34 -> { 260 }
-  35 -> { 165 }
+  35 -> { 165 49 143 17 124 19 }
   36 -> { 116 260 }
   37 -> { mort5 }
   38 -> { 269 11 }
@@ -123,7 +123,7 @@ digraph {
   122 -> { 311 }
   123 -> { 266 }
   124 -> { 221 }
-  125 -> { 125vol3 }
+  125 -> { vol3 } # N°125 du volume 3
   126 -> { 54 317 }
   127 -> { 249 }
   128 -> { 133 39 }
@@ -282,7 +282,7 @@ digraph {
   281 -> { 253 }
   282 -> { mort25 }
   283 -> { 167 }
-  284 -> { 197 }
+  284 -> { 197 92 137 120 55 187 297 106 77 }
   285 -> { 223 }
   286 -> { 158 44 }
   287 -> { 270 }
@@ -322,6 +322,18 @@ digraph {
   321 -> { mort32 }
   322 -> { fin }
 
+  subgraph easter_eggs {
+    52 86 125 vol3
+  }
+
+  subgraph chemins_caches {
+    subgraph carnet_antinoma { # 17
+      72 -> 89
+      134 -> 151
+      230 -> 247
+    }
+  }
+
   subgraph magie {
     edge [ arrowhead = icurve ]
     
@@ -335,12 +347,15 @@ digraph {
       edge [ color = blue ]
 
       102 -> 166
+      111 -> 175
+      150 -> 214
     }
 
     subgraph ouverture { # 13
       edge [ color = green ]
 
       85 -> 98
+      224 -> 237
     }
 
     subgraph dissolution { # 88
