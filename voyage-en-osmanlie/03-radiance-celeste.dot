@@ -3,7 +3,7 @@ digraph {
   2 -> { 129 }
   3 -> { 220 }
   4 -> { 201 }
-  5 -> { mort1 } # 69 (parapluie)
+  5 -> { mort1 }
   6 -> { 72 }
   7 -> { 132 }
   8 -> { 197 236 }
@@ -15,7 +15,7 @@ digraph {
   14 -> { 239 }
   15 -> { 367 }
   16 -> { 285 }
-  17 -> { 281 236 } # 30 ouverture
+  17 -> { 281 236 }
   18 -> { 282 279 }
   19 -> { 310 379 }
   20 -> { 335 }
@@ -43,9 +43,9 @@ digraph {
   42 -> { 447 207 404 }
   43 -> { 175 77 22 }
   44 -> { 341 }
-  45 -> { 239 } # 53 étincelle
+  45 -> { 239 }
   46 -> { 324 99 4 201 }
-  47 -> { 388 } # 250 énigme
+  47 -> { 388 }
   48 -> { 98 }
   49 -> { 291 343 }
   50 -> { 8 }
@@ -364,7 +364,7 @@ digraph {
   363 -> { 172 331 349 }
   364 -> { 332 }
   365 -> { 253 433 }
-  366 -> { 372 } # 430 parapluie
+  366 -> { 372 }
   367 -> { 407 149 114 28 474 }
   368 -> { 56 }
   369 -> { "Fin: astre souverain du monde" }
@@ -432,7 +432,7 @@ digraph {
   431 -> { 18 282 }
   432 -> { 385 }
   433 -> { 308 280 }
-  434 -> { mort36 } # 442 étincelle
+  434 -> { mort36 }
   435 -> { 45 }
   436 -> { 60 351 }
   437 -> { 108 346 }
@@ -484,4 +484,60 @@ digraph {
   483 -> { 434 }
   484 -> { 221 }
   485 -> { "Fin: le mage de Varna" }
+
+  subgraph cluster_premier_domaine {
+  }
+
+  subgraph cluster_deuxieme_domaine {
+    subgraph requete_boiteux {
+      20 335 41 259 348 300 48 209 410 98 16 393 470 285 12 86 415 204 106 261 320 189 38 403 307 248 87 173 297 391 27 131
+    }
+  }
+
+  subgraph chemins_caches {
+    47 -> 250 # calcul d'Erganné
+  }
+
+  subgraph magie {
+    edge [ arrowhead = icurve ]
+    
+    subgraph etincelle { # 8
+      edge [ color = red ]
+
+      45 -> 53
+      434 -> 442
+    }
+
+    subgraph parapluie { # 64
+      edge [ color = blue ]
+
+      5 -> 69
+      366 -> 430
+    }
+
+    subgraph ouverture { # 13
+      edge [ color = green ]
+
+      17 -> 30
+    }
+
+    subgraph dissolution { # 88
+      edge [ color = brown ]
+
+    }
+
+    subgraph ailes_mystiques { # 25
+
+    }
+
+    subgraph resurrection { # 77
+      edge [ color = green ]
+
+      321 -> 398
+    }
+
+    subgraph collet_magique { # -50
+
+    }
+  }
 }
